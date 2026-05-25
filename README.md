@@ -1,21 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# FreedomChat (Freedom Messenger)
 
-# Run and deploy your AI Studio app
+FreedomChat is a modern, real-time messaging application designed for seamless communication. Built with native Android technologies and a powerful backend-as-a-service, it provides a fast and secure chatting experience.
 
-This contains everything you need to run your app locally.
+## App Description
+FreedomChat leverages the latest Android development practices to provide a high-performance messaging platform. The app features a real-time chat interface where users can exchange messages instantly, manage their profiles, and stay notified of new activities.
 
-View your app in AI Studio: https://ai.studio/apps/3241f5d4-8b89-4ad2-94b7-88c640c278e8
+### Key Features
+- **Real-time Messaging**: Instant message delivery and synchronization using Supabase Realtime.
+- **Secure Authentication**: Robust user authentication and session management via Supabase Auth.
+- **Media Support**: Ability to share and view images, powered by Supabase Storage and Coil.
+- **Push Notifications**: Stay updated even when the app is in the background with Firebase Cloud Messaging (FCM) integration.
+- **Local Persistence**: Offline access to your message history using Room Database.
+- **Modern Material 3 UI**: A beautiful, responsive user interface built entirely with Jetpack Compose.
 
-## Run Locally
+## Technologies Used
+- **Language**: [Kotlin](https://kotlinlang.org/)
+- **UI Framework**: [Jetpack Compose](https://developer.android.com/jetpack/compose) with Material 3
+- **Backend**: [Supabase](https://supabase.com/)
+    - PostgREST (Database API)
+    - Realtime (WebSockets)
+    - Auth (Authentication)
+    - Storage (File Management)
+- **Notifications**: [Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging)
+- **Local Database**: [Room](https://developer.android.com/training/data-storage/room)
+- **Networking**: [Retrofit](https://square.github.io/retrofit/) & [OkHttp](https://square.github.io/okhttp/)
+- **Serialization**: [Kotlinx Serialization](https://github.com/Kotlin/kotlinx.serialization)
+- **Image Loading**: [Coil](https://coil-kt.github.io/coil/)
+- **Architecture**: MVVM (Model-View-ViewModel) with Clean Architecture principles.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+## Getting Started
 
+### Prerequisites
+- [Android Studio Jellyfish](https://developer.android.com/studio) or newer.
+- A Supabase project.
+- A Firebase project (for notifications).
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+### Setup
+1. Clone the repository.
+2. Create a `.env` file in the root directory (refer to `.env.example`).
+3. Add your Supabase URL and API Key to the `.env` file.
+4. Add your `google-services.json` to the `app/` directory.
+5. Sync the project with Gradle.
+6. Run the app on an emulator or physical device.
+
+---
+Developed as a showcase of modern Android development with Supabase.
