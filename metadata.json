@@ -1,0 +1,6 @@
+{
+  "name": "Freedom Messenger",
+  "description": "A modern real-time chat application built with Kotlin, Jetpack Compose, and Supabase-kt.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

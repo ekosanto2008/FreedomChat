@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "347120621447",
+    "project_id": "santosochat-d8270",
+    "storage_bucket": "santosochat-d8270.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347120621447:android:f8f3a74ef9b2633f49a522",
+        "android_client_info": {
+          "package_name": "com.aistudio.supachat.kxmpzq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2_ujzRNseMuEU-R93f-SYfXWviPvyLBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
